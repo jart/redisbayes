@@ -18,9 +18,8 @@ traffic forum website and it worked pretty well.  It can work for you too :)
 It's not tied to any particular format like email, it just deals with the raw
 text.
 
-This is probably the only simple spam filtering library you'll find for Python
-that's simple (170 lines of code), works (30 lines of test code), and doesn't
-suck.
+This is probably the only spam filtering library you'll find for Python that's
+simple (170 lines of code), works (30 lines of test code), and doesn't suck.
 
 
 Installation
