@@ -174,8 +174,8 @@ class RedisBayes(object):
         self.correction = correction
         self.tokenizer = tokenizer or english_tokenizer
         if not self.redis:
-            import redis
-            redis = redis.Redis()
+            from redis import Redis
+            self.redis = Redis()
 
     def flush(self):
         for cat in self.redis.smembers(self.prefix + 'categories'):
