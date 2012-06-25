@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# this is not a love song
 # http://packages.python.org/distribute/setuptools.html
 # http://diveintopython3.org/packaging.html
 # http://wiki.python.org/moin/CheeseShopTutorial
