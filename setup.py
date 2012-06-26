@@ -24,7 +24,7 @@ setup(
     url                  = "https://github.com/jart/redisbayes",
     license              = "MIT",
     install_requires     = ["redis"],
-    py_modules           = ["redisbayes"],
+    py_modules           = ["redisbayes", "ez_setup"],
     classifiers = [
         "Development Status :: 5 - Production/Stable",
         "License :: OSI Approved :: MIT License",
