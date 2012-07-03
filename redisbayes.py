@@ -79,7 +79,7 @@ import re
 import math
 
 
-__version__ = '0.1.2'
+__version__ = "0.1.3"
 
 english_ignore = set("""
 a able about above abroad according accordingly across actually adj after
