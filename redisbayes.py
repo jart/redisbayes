@@ -211,7 +211,8 @@ class RedisBayes(object):
         scores = {}
         for category in self.redis.smembers(self.prefix + 'categories'):
             tally = self.tally(category)
-            if tally == 0: continue
+            if tally == 0:
+                continue
             scores[category] = 0.0
             for word, count in occurs.iteritems():
                 score = self.redis.hget(self.prefix + category, word)
