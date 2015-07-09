@@ -3,6 +3,8 @@ python:
   - "2.6"
   - "2.7"
   - "nightly"
+services:
+  - redis-server
 install:
   - pip install .
 script:
