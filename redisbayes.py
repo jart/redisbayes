@@ -41,18 +41,18 @@ ur"""
         >>> rb.flush()
         >>> rb.classify('nothing trained yet') is None
         True
-        >>> rb.train('good', 'sunshine drugs love sex lobster sloth')
-        >>> rb.train('bad', 'fear death horror government zombie god')
+        >>> rb.train('good', 'sunshine God love sex lobster sloth')
+        >>> rb.train('bad', 'fear death horror government zombie')
         >>> rb.classify('sloths are so cute i love them')
         'good'
-        >>> rb.classify('i fear god and love the government')
+        >>> rb.classify('i am a zombie and love the government')
         'bad'
-        >>> int(rb.score('i fear god and love the government')['bad'])
+        >>> int(rb.score('i am a zombie and love the government')['bad'])
         -9
-        >>> int(rb.score('i fear god and love the government')['good'])
+        >>> int(rb.score('i am a zombie and love the government')['good'])
         -14
-        >>> rb.untrain('good', 'sunshine drugs love sex lobster sloth')
-        >>> rb.untrain('bad', 'fear death horror government zombie god')
+        >>> rb.untrain('good', 'sunshine God love sex lobster sloth')
+        >>> rb.untrain('bad', 'fear death horror government zombie')
         >>> rb.score('lolcat')
         {}
 
