@@ -48,9 +48,9 @@ ur"""
         >>> rb.classify('i am a zombie and love the government')
         'bad'
         >>> int(rb.score('i am a zombie and love the government')['bad'])
-        -7
-        >>> int(rb.score('i am a zombie and love the government')['good'])
         -9
+        >>> int(rb.score('i am a zombie and love the government')['good'])
+        -14
         >>> rb.untrain('good', 'sunshine God love sex lobster sloth')
         >>> rb.untrain('bad', 'fear death horror government zombie')
         >>> rb.score('lolcat')
