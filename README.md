@@ -28,13 +28,13 @@ From git:
     import redis, redisbayes
     rb = redisbayes.RedisBayes(redis=redis.Redis())
 
-    rb.train('good', 'sunshine drugs love sex lobster sloth')
-    rb.train('bad', 'fear death horror government zombie god')
+    rb.train('good', 'sunshine God love sex lobster sloth')
+    rb.train('bad', 'fear death horror government zombie')
 
     assert rb.classify('sloths are so cute i love them') == 'good'
-    assert rb.classify('i fear god and love the government') == 'bad'
+    assert rb.classify('i am a zombie and love the government') == 'bad'
 
-    print rb.score('i fear god and love the government')
+    print rb.score('i fear God and hate the government')
 
-    rb.untrain('good', 'sunshine drugs love sex lobster sloth')
-    rb.untrain('bad', 'fear death horror government zombie god')
+    rb.untrain('good', 'sunshine God love sex lobster sloth')
+    rb.untrain('bad', 'fear death horror government zombie')
