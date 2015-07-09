@@ -48,9 +48,9 @@ ur"""
         >>> rb.classify('i am a zombie and love the government')
         'bad'
         >>> int(rb.score('i am a zombie and love the government')['bad'])
-        -9
+        -7
         >>> int(rb.score('i am a zombie and love the government')['good'])
-        -14
+        -9
         >>> rb.untrain('good', 'sunshine God love sex lobster sloth')
         >>> rb.untrain('bad', 'fear death horror government zombie')
         >>> rb.score('lolcat')
@@ -228,5 +228,5 @@ class RedisBayes(object):
 
 
 if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
+    import doctest, sys
+    sys.exit(doctest.testmod()[0])
